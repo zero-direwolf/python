@@ -26,3 +26,14 @@ if a == y:
 	pass
 else:
 	print('the values are not same')
+
+#adding elif statement
+
+if x<y:
+	print('x > y')
+elif x==y:
+	print('x = y')
+elif y>x:
+	print('y > x')
+else:
+	print('break out')

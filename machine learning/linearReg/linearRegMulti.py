@@ -25,9 +25,15 @@ with open('linearRegressionMulti.pickle','wb') as f:
 pickle_in = open('linearRegressionMulti.pickle','rb')
 clf = pickle.load(pickle_in)
 
-pred = clf.predict(X_test)  # we can now predict the random values we kept aside
+#pred = clf.predict(X_test)  # we can now predict the random values we kept aside
 
 m = clf.coef_
 b = clf.intercept_
 
 #print(m,b)
+
+#mprime = np.transpose(m)
+X_testPrime = np.transpose(X_test)
+prediction = (m*X_testPrime) + b
+predictionReshape = np.reshape(prediction,(14,1))
+print(predictionReshape)

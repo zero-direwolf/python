@@ -30,4 +30,4 @@ pred = clf.predict(X_test)  # we can now predict the random values we kept aside
 m = clf.coef_
 b = clf.intercept_
 
-print(m,b)
+#print(m,b)
